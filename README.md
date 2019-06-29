@@ -1,6 +1,6 @@
 # docker-geoserver
 [![Build Status](https://travis-ci.org/sogis/docker-geoserver.svg?branch=master)](https://travis-ci.org/sogis/docker-geoserver)
-
+ 
 Building:
 ```
 docker build -t sogis/geoserver:2.15.1 .
