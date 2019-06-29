@@ -30,7 +30,6 @@ RUN mkdir -p ${GEOSERVER_DATA_DIR} \
 	&& wget http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/geoserver-${GEOSERVER_VERSION}-war.zip \
 	&& unzip geoserver-${GEOSERVER_VERSION}-war.zip \
 	&& unzip geoserver.war \
-	#&& mv data/* ${GEOSERVER_DATA_DIR} \
 	&& rm -rf geoserver-${GEOSERVER_VERSION}-war.zip geoserver.war target *.txt
 
 # Replace default data directory
