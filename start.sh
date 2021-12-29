@@ -4,3 +4,4 @@ for ext in `ls -d /var/local/geoserver-exts/*/`; do
 done
 
 catalina.sh run
+
