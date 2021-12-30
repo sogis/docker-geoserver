@@ -70,7 +70,7 @@ RUN sed -i '\:</web-app>:i\
 
 # Tomcat environment
 ENV CATALINA_OPTS "-server -Djava.awt.headless=true \
-	-Xms2048m -Xmx2048m -XX:+UseConcMarkSweepGC -XX:NewSize=48m \
+	-Xms2048m -Xmx4096m -XX:+UseParNewGC -XX:NewSize=48m \
     -DGEOSERVER_DATA_DIR=${GEOSERVER_DATA_DIR}"
 
 ADD start.sh /usr/local/bin/start.sh
