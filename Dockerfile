@@ -39,9 +39,9 @@ RUN mkdir ${GEOSERVER_INSTALL_DIR} \
 
 # GeoServer modules    
 RUN cd ${GEOSERVER_INSTALL_DIR}/WEB-INF/lib \
-    && wget http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-monitor-plugin.zip \
-    && unzip -o geoserver-${GEOSERVER_VERSION}-monitor-plugin.zip \
-    && rm -rf geoserver-${GEOSERVER_VERSION}-monitor-plugin.zip  \
+    #&& wget http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-monitor-plugin.zip \
+    #&& unzip -o geoserver-${GEOSERVER_VERSION}-monitor-plugin.zip \
+    #&& rm -rf geoserver-${GEOSERVER_VERSION}-monitor-plugin.zip  \
     && wget http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-control-flow-plugin.zip \
     && unzip -o geoserver-${GEOSERVER_VERSION}-control-flow-plugin.zip \
     && rm -rf geoserver-${GEOSERVER_VERSION}-control-flow-plugin.zip \
