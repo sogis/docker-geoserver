@@ -18,6 +18,11 @@ Set `CATALINA_OPTS` env var for tuning JVM.
 ## Plugins
 The following plugins are added:
 
-- monitor
+- (monitor)
 - control-flow
 - pyramid
+
+
+
+
+docker run --rm --name sogis-geoserver -p 8080:8080 sogis/geoserver-graalvm:2.20.1
