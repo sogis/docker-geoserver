@@ -3,7 +3,7 @@ FROM tomcat:9-jre11
 
 LABEL maintainer="Stefan Ziegler stefan.ziegler.de@gmail.com"
 
-ARG GEOSERVER_VERSION=2.20.1
+ARG GEOSERVER_VERSION=2.20.2
 ENV GEOSERVER_DATA_DIR /usr/local/geoserver/data
 ENV GEOSERVER_INSTALL_DIR /usr/local/geoserver
 
